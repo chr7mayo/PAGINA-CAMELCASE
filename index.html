@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metodologías BEM y camelCase</title>
+  <link rel="stylesheet" href="/CSS/estilos.css" />
+</head>
+<body>
+  <header class="pagina__header">
+    <h1 class="titulo-principal">Metodologías BEM y camelCase</h1>
+  </header>
+  
+   <main class="pagina__contenido">
+
+    <!-- Sección BEM -->
+       <h3>Las metodologías BEM y camelCase son enfoques utilizados en desarrollo web, especialmente en el nombramiento de clases, variables o elementos para mejorar la legibilidad, mantenimiento y consistencia del código. Aunque sirven para fines diferentes, a menudo se utilizan juntos en proyectos web modernos.</p></h3>
+    <section class="seccion seccion--bem">
+      <h2 class="seccion__titulo">¿Qué es BEM (Block Element Modifier) y por qué es importante?</h2>
+      <b><p class="seccion__texto">BEM es una metodología de trabajo para la escritura del CSS. Corresponde a las siglas Block Element Modifier y básicamente permite definir el CSS agrupando las reglas en esos tres elementos, el bloque, el elemento y el modificador. Enseguida vamos a entrar en detalle para que puedas entenderlos bien.
+    Este método de estructurar el CSS permite que los componentes sean reutilizables y el código CSS fácil de mantener, sobre todo cuando varios componentes de un equipo necesitan trabajar sobre el mismo proyecto.La clave de BEM se basa en fijar una manera clara y predecible para definir las clases CSS y otros selectores, lo cual nos ayuda a evitar conflictos, garantizar que cada componente esté claramente separado y se pueda reutilizar con más facilidad. Sus efectos positivos se aprecian sobre todo en proyectos medianos o grandes.</p></b> <br>
+      <div class="seccion__video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6LUz0MnNCiA?si=HJmgWF5dUXhw5-ma" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+     
+
+      <h3 class="subtitulo">¿Cómo Funciona BEM?</h3>
+      <ol class="lista lista--ordenada">
+        <b><li>Bloque: el componente de más alto nivel y sirve como base de su estructura de código. Piense en un bloque como una pieza autónoma y reutilizable de su interfaz. Puede ser cualquier cosa, desde un menú de navegación hasta un botón o un formulario. La idea clave es que un bloque representa una parte distinta y funcional de su sitio web o aplicación.</li></b>
+        <b><li>Elementos:los componentes que componen esos bloques. Los elementos dependen de los bloques y no pueden existir independientemente—siempre pertenecen a un nombre de bloque, seguido del nombre del elemento.</li></b>
+       <b><li>Modificador: una bandera que agrega a un bloque o elemento para cambiar su apariencia, comportamiento o estado.</li></b> 
+      </ol>
+
+      <h3 class="subtitulo">Ejemplos de código BEM</h3>
+      <ul class="lista lista--desordenada">
+         <p>Si tiene un componente de tarjeta en su sitio web con un título, imagen y descripción. En BEM, puede comenzar con un .tarjeta bloque:</p>
+        <li><img src="IMAGENES/bem1.webp" alt="Ejemplo de estructura BEM" class="seccion__imagen"></li><br>
+        <p>Si necesita agregar un botón a la tarjeta, en lugar de anidarla profundamente, simplemente agregue un nuevo elemento dentro de la tarjeta .tarjeta bloque:</p>
+        <li><img src="/IMAGENES/bem2.webp" alt="Emjemplo de estructura BEM" class="seccion__imagen"></li><br>
+      </ul>
+       
+      <h2 class="seccion__titulo">Por Qué BEM Es Tu Mejor Apuesta para CSS Escalable</h2>
+      <b><p>En general, la escala está inclinándose al uso de BEM en todos los proyectos futuros.
+       No mire a BEM como un solucionador de problemas, sino más bien como una solución a largo plazo para construir una base de código de larga data y adaptable.
+       BEM no es solo otra palabra de moda en el mundo del desarrollo front-end,— utiliza una metodología probada que simplifica su código, aumenta la colaboración y escala sin esfuerzo con sus proyectos. Ya sea que esté construyendo un sitio web pequeño o una aplicación web masiva, la estructura clara de BEMM y las convenciones de nombres ponen orden en su CSS, lo que facilita su administración y mantenimiento a medida que crece su base de código.</p></b><br>
+      
+    </section>
+
+    <!-- Sección camelCase -->
+    <section class="seccion secciocn--camel">
+      <h2 class="seccion__titulo">CamelCase</h2> <br>
+      <b><p class="seccion__texto">Camel Case (también conocido como camelCase o dromedary case) es una convención de escritura utilizada principalmente en programación y desarrollo de software para nombrar variables, funciones, métodos, clases y otros identificadores. Esta convención consiste en escribir frases o palabras compuestas sin espacios ni guiones, donde la primera palabra comienza con minúscula y cada palabra subsiguiente inicia con una letra mayúscula. El nombre «Camel Case» proviene de la forma visual que generan las mayúsculas intermedias, que parecen las jorobas de un camello.</p></b>
+       
+       <div class="seccion__video">
+   <h3 class="subtitulo">Video explicativo sobre camelCase</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xwvzYl3Oviw?si=2YOhj2OS4dxcn-1a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <h2 class="seccion__titulo">Ventajas de usar Camel Case</h2>
+      <ol class="lista lista--ordenada">
+        <b><li>Mejora la legibilidad: Al eliminar espacios y usar mayúsculas para separar palabras, es fácil identificar visualmente cada palabra dentro del identificador.</li></b> <br>
+         <b><li>Compatibilidad con la mayoría de lenguajes: La mayoría de lenguajes de programación no permiten espacios en los nombres, por lo que Camel Case es una forma estandarizada de tener nombres compuestos.</li></b> <br>
+         <b><li>Evita ambigüedades: En comparación con otros métodos, como usar guiones bajos o todo en minúsculas, Camel Case destaca cada palabra y reduce confusiones.</li></b> <br>
+      </ol>
+
+      <h3 class="subtitulo">Ejemplos de código camelCase</h3>
+      <ul class="lista lista--desordenada">
+        <li><img src="/IMAGENES/camel1.png" alt="ejemplo-camelCase" class="seccion__imagen"></li>
+        <li><img src="/IMAGENES/camel2.gif" alt="ejemplo-camelCase" class="seccion__imagen"></li>
+        <li><img src="/IMAGENES/camel3.png" alt="ejemplo-camelCase" class="seccion__imagen"></li>
+      </ul>
+    </section>
+
+    <!-- Sección Comparación -->
+    <section class="seccion seccion--comparacion">
+      <h2 class="seccion__titulo">Comparación entre BEM y camelCase</h2>
+      <table class="tabla-comparativa">
+        <thead>
+          <tr>
+            <th>Aspecto</th>
+            <th>BEM</th>
+            <th>camelCase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Uso común</td>
+            <td>Clases CSS</td>
+            <td>Variables y funciones</td>
+          </tr>
+          <tr>
+            <td>Legibilidad</td>
+            <td>Alta</td>
+            <td>Media</td>
+          </tr>
+          <tr>
+            <td>Organización</td>
+            <td>Muy estructurada</td>
+            <td>Más flexible</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="seccion__texto">Se recomienda usar BEM para nombrar clases en CSS y camelCase para nombres en JavaScript.</p>
+     
+    </section>
+
+    <!-- Sección Aplicación Práctica -->
+    <section class="seccion seccion--ejemplo">
+      <h2 class="seccion__titulo">Aplicación práctica con CSS</h2>
+      <div class="card">
+        <h3 class="card__titulo">Ejemplo visual con BEM</h3>
+        <p class="card__texto">Esta tarjeta fue diseñada aplicando clases BEM y estilos CSS organizados.</p>
+        <button class="card__boton card__boton--activo">Click aquí</button>
+      </div>
+       
+
+    </section>
+
+  </main>
+
+  <footer class="pagina__footer">
+    <p>&copy; 2025-Mendoza Chavez Christian . Todos los derechos reservados.</p>
+    <a href="https://en.bem.info/methodology/" target="_blank">Más sobre BEM</a> |
+    <a href="https://es.wikipedia.org/wiki/CamelCase" target="_blank">Más sobre camelCase</a>
+  </footer>
+</body>
+</html>

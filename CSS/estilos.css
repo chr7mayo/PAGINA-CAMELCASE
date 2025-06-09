@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #8d8d8d;
+  color: #f3ebeb;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/* Contenedores principales */
+.pagina__header{
+  background-color: #053753;
+ color: white;
+ text-align: center;
+ padding: 20px;
+}
+.pagina__footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.pagina__contenido {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Títulos */
+.titulo-principal {
+  font-size: 2.5rem;
+}
+
+.seccion__titulo {
+  font-size: 1.8rem;
+  color: #003366;
+  margin: 15px 0 10px;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+/* Listas */
+.lista--ordenada,
+.lista--desordenada {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.lista--ordenada li,
+.lista--desordenada li {
+  margin-bottom: 5px;
+}
+
+/* Imagen */
+.seccion__imagen {
+ max-width: 99%;
+  margin: 15px auto;
+  display: block;
+  border-radius: 8px;
+  border: 2px solid #464141;
+}
+
+/* Tabla */
+.tabla-comparativa {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background-color: rgb(15, 15, 15);
+}
+
+.tabla-comparativa th,
+.tabla-comparativa td {
+  border: 1px solid #0b271a;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Video */
+.seccion__video {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.seccion__video iframe,
+.seccion__video video {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Tarjeta (card) con BEM */
+.card {
+  background-color: #3a4d70;
+  border: 2px solid #343535;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.card__titulo {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card__texto {
+  margin-bottom: 15px;
+}
+
+.card__boton {
+  padding: 10px 20px;
+  background-color: #0077aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__boton--activo {
+  background-color: #005577;
+}
+
+/* Enlaces */
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: tablets y móviles */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 1.8rem;
+  }
+
+  .seccion__titulo {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card__boton {
+    width: 100%;
+  }
+
+  .tabla-comparativa th,
+  .tabla-comparativa td {
+    font-size: 0.9rem;
+  }
+}
+
